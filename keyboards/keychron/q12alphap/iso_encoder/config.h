@@ -28,3 +28,7 @@
 
 /* Enable num-lock LED */
 #define NUM_LOCK_LED_INDEX 18
+
+
+/* add more space */
+#define WEAR_LEVELING_LOGICAL_SIZE 4096

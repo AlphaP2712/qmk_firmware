@@ -88,6 +88,16 @@ bool rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max) {
         }
     }
 #    endif // NUM_LOCK_LED_INDEX
+#    if defined(LAYER_FN_LED_INDEX)
+    if (IS_LAYER_ON(3)) {
+        RGB_MATRIX_INDICATOR_SET_COLOR(LAYER_FN_LED_INDEX, 255, 255, 255);
+    } else {
+        if (!rgb_matrix_get_flags()) {
+            RGB_MATRIX_INDICATOR_SET_COLOR(LAYER_FN_LED_INDEX, 0, 0, 0);
+        }
+    }
+#    endif // NUM_LOCK_LED_INDEX
+
     return true;
 }
 #endif

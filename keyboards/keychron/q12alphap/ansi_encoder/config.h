@@ -28,3 +28,6 @@
 
 /* Enable num-lock LED */
 #define NUM_LOCK_LED_INDEX 18
+
+/* Enable Layer LED*/
+#define LAYER_FN_LED_INDEX 59
